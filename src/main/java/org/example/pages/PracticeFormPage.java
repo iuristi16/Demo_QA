@@ -30,11 +30,17 @@ public class PracticeFormPage {
 
     public Locator genderFemale() {
         return page.locator("label[for='gender-radio-2']");
-
-
     }
 
-    public Locator mobileNumber() {
+    public Locator genderMale() {
+        return page.locator("label[for='gender-radio-1']");
+    }
+
+    public Locator genderOther() {
+        return page.locator("label[for='gender-radio-3']");
+    }
+
+        public Locator mobileNumber() {
         return page.locator("#userNumber");
     }
 
