@@ -42,6 +42,16 @@ public class PracticeFormSteps extends PracticeFormPage {
         return this;
     }
 
+    public PracticeFormSteps clickGender1() {
+        genderMale().click();
+        return this;
+    }
+
+    public PracticeFormSteps clickGender2() {
+        genderOther().click();
+        return this;
+    }
+
     public PracticeFormSteps fillMobile() {
         mobileNumber().fill(TestData.MOBILE);
         return this;

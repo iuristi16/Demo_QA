@@ -54,6 +54,7 @@ public class DemoQATest extends BaseTest {
                 .verifyFormSubmittedSuccessfully();
 
     }
+
     @Test (priority =4 )
 
     public void shouldInValidateMobileNumber() {
