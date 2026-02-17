@@ -5,7 +5,7 @@ package demoQATest;
 import baseTest.BaseTest;
 import org.example.steps.PracticeFormSteps;
 import org.testng.annotations.Test;
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
 
 public class DemoQATest extends BaseTest {
 
@@ -27,7 +27,8 @@ public class DemoQATest extends BaseTest {
                 .selectState()
                 .selectCity()
                 .submitForm()
-                .verifyFormSubmittedSuccessfully();
+                .verifyFormSubmittedSuccessfully()
+                .verifyModalData();
 
 
 

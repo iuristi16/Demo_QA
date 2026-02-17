@@ -15,8 +15,6 @@ public class TestData {
     public static final String STATE = "NCR";
     public static final String CITY = "Delhi";
     public static final String INVALID_MOBILE = "123";
-
-
     public static final String SUCCESS_MESSAGE =
             "Thanks for submitting the form";
 
