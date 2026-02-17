@@ -4,7 +4,7 @@ package org.example.pages;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import org.example.data.Constants;
+
 
 
 public class PracticeFormPage {
@@ -15,10 +15,18 @@ public class PracticeFormPage {
         this.page = page;
     }
 
+    public Locator formsCard() {
+        return page.locator("text=Forms");
+    }
+
+    public Locator practiceFormMenu() {
+        return page.locator("text=Practice Form");
+    }
 
     public Locator firstName() {
         return page.locator("#firstName");
     }
+
 
     public Locator lastName() {
         return page.locator("#lastName");
@@ -40,7 +48,7 @@ public class PracticeFormPage {
         return page.locator("label[for='gender-radio-3']");
     }
 
-        public Locator mobileNumber() {
+    public Locator mobileNumber() {
         return page.locator("#userNumber");
     }
 
@@ -64,18 +72,8 @@ public class PracticeFormPage {
         return page.locator("#state");
     }
 
-    public Locator stateOption(String state) {
-        return page.locator("div.css-1n7v3ny-option")
-                .filter(new Locator.FilterOptions().setHasText(state));
-    }
-
     public Locator cityDropdown() {
         return page.locator("#city");
-    }
-
-    public Locator cityOption(String city) {
-        return page.locator("div.css-1n7v3ny-option")
-                .filter(new Locator.FilterOptions().setHasText(city));
     }
 
 
@@ -86,10 +84,19 @@ public class PracticeFormPage {
     public Locator mobileNumber1() {
         return page.locator("#userNumber");
     }
+
     public Locator successModalTitle() {
         return page.locator(".modal-title");
     }
 
 
+
+
+    public Locator modalValueByLabel(String label) {
+        return page.locator("//td[text()='" + label + "']/following-sibling::td");
     }
+
+
+}
+
 
