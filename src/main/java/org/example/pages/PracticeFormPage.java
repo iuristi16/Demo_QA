@@ -83,6 +83,7 @@ public class PracticeFormPage {
 
     public Locator mobileNumber1() {
         return page.locator("#userNumber");
+        //}
     }
 
     public Locator successModalTitle() {

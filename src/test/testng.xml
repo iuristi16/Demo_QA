@@ -2,6 +2,7 @@
 
 <suite name="DemoQA Suite" parallel="false">
 
+
    <test name="DemoQA">
        <classes>
            <class name="demoQATest.DemoQATest"></class>
